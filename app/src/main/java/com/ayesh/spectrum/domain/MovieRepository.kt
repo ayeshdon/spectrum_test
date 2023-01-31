@@ -1,11 +1,8 @@
 package com.ayesh.spectrum.domain
 
-import com.ayesh.spectrum.data.local.entity.GenresEntity
-import com.ayesh.spectrum.data.remote.dto.GenresDto
-import com.ayesh.spectrum.utils.Resource
-import kotlinx.coroutines.flow.Flow
+import com.ayesh.spectrum.data.remote.dto.MovieListResponse
 
 interface MovieRepository {
 
-    suspend fun getGenreList(): Flow<Resource<List<GenresEntity>>>
+    suspend fun getPlayNowMovieList(page: Int,category : String): MovieListResponse
 }

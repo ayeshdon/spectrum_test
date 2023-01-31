@@ -1,7 +1,9 @@
 package com.ayesh.spectrum.data.remote
 
 import com.ayesh.spectrum.data.remote.dto.GenresDto
+import com.ayesh.spectrum.data.remote.dto.MovieListResponse
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface MovieApiClass {
@@ -13,4 +15,11 @@ interface MovieApiClass {
 
     @GET(V_3 + "genre/movie/list")
     suspend fun getGenreList(@Query("api_key") apiKey: String = API_KEY): GenresDto
+
+    @GET(V_3 + "movie/{category}")
+    suspend fun getPlayNowMovieList(
+        @Path("category") category: String,
+        @Query("api_key") apiKey: String = API_KEY,
+        @Query("page") page: Int
+    ): MovieListResponse
 }
