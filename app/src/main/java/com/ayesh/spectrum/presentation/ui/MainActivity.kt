@@ -2,7 +2,6 @@ package com.ayesh.spectrum.presentation.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.ayesh.spectrum.R
@@ -21,10 +20,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         viewModel.genresCache.observe(this@MainActivity) {
-            Log.e("MAIN", "DONE ${it}")
-            Log.e("MAIN", "DONE 02 ${it is Resource.Error}")
-            Log.e("MAIN", "DONE 03 ${it is Resource.Success}")
-            Log.e("MAIN", "DONE 04 ${it is Resource.Loading}")
             when (it) {
                 is Resource.Success -> {
                     val i = Intent(this@MainActivity, DashboardActivity::class.java)

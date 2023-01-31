@@ -6,7 +6,6 @@ import com.ayesh.spectrum.data.mapper.toGenresEntity
 import com.ayesh.spectrum.data.remote.MovieApiClass
 import com.ayesh.spectrum.utils.networkBoundResource
 import kotlinx.coroutines.delay
-import timber.log.Timber
 import javax.inject.Inject
 
 class CacheRepositoryImpl @Inject constructor(

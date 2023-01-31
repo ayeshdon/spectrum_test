@@ -6,11 +6,17 @@
         <entry key="app/src/main/res/drawable/bottom_nav_selector.xml" value="0.111" />
         <entry key="app/src/main/res/drawable/button_error.xml" value="0.112" />
         <entry key="app/src/main/res/drawable/fragment_bg.xml" value="0.1385" />
+        <entry key="app/src/main/res/drawable/image_corner_redius_bg.xml" value="0.1385" />
         <entry key="app/src/main/res/drawable/nav_bg.xml" value="0.1385" />
         <entry key="app/src/main/res/drawable/serach_bg.xml" value="0.1385" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/dialog_main.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_now_playing.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_popular.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_top_rated.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_upcoming.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/movie_grid_item.xml" value="0.240625" />
         <entry key="app/src/main/res/menu/menu_bottom_nav.xml" value="0.23958333333333334" />
       </map>
     </option>

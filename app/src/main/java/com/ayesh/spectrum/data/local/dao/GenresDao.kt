@@ -18,4 +18,7 @@ interface GenresDao {
 
     @Query("SELECT * FROM genres_item")
     fun getAllGenresFromLocal(): Flow<List<GenresEntity>>
+
+    @Query("SELECT * FROM genres_item WHERE id = :id")
+    fun getGenreFromLocal(id: Int): Flow<GenresEntity>
 }
