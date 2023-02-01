@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.ayesh.spectrum.R
+import com.ayesh.spectrum.presentation.fragment.FavMoviesFragment
 import com.ayesh.spectrum.presentation.fragment.NowPlayingFragment
 import com.ayesh.spectrum.utils.Constants
 import dagger.hilt.android.AndroidEntryPoint
@@ -22,6 +23,7 @@ class DashboardActivity : AppCompatActivity() {
                 R.id.popular_nav -> setCurrentFragment(NowPlayingFragment.newInstance(Constants.URL_POPULAR))
                 R.id.top_rated_nav -> setCurrentFragment(NowPlayingFragment.newInstance(Constants.URL_TOP_RATED))
                 R.id.upcoming_nav -> setCurrentFragment(NowPlayingFragment.newInstance(Constants.URL_UPCOMING))
+                R.id.favourites_nav -> setCurrentFragment(FavMoviesFragment.newInstance())
             }
             true
         }

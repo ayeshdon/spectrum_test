@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Spectrum2023</string>
-    <string name="now_playing">Now Playing</string>
+    <string name="now_playing">Showing</string>
     <string name="popular">Popular</string>
     <string name="top_rated">Top Rated</string>
-    <string name="upcoming">Upcoming</string>
+    <string name="upcoming">Coming soon</string>
+    <string name="favourites">Favourites</string>
     <string name="search_tag_line">Hello, what do you want to watch</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

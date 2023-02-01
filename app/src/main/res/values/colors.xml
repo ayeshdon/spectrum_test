@@ -11,4 +11,6 @@
     <color name="main_bg">#283548</color>
     <color name="secondary_bg">#5aa1d5</color>
     <color name="light_gray_test">#4a505c</color>
+    <color name="light_gray_text2">#8CFFFFFF</color>
+    <color name="status_red">#eb5757</color>
 </resources>
