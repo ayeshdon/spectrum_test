@@ -17,5 +17,9 @@
         android:title="@string/upcoming"
         android:icon="@drawable/ic_upcoming"/>
 
+    <item android:id="@+id/favourites_nav"
+        android:title="@string/favourites"
+        android:icon="@drawable/ic_fav_border"/>
+
 
 </menu>

@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.compose.ui.unit.dp
 import androidx.recyclerview.widget.RecyclerView
 import com.ayesh.spectrum.R
 import com.ayesh.spectrum.domain.model.MovieModel
@@ -32,9 +31,9 @@ class MovieListAdapter(
         val item = movieList[position]
         Glide
             .with(context)
-            .load(Constants.IMAGE_URL_PREFIX+item.poster)
+            .load(Constants.IMAGE_URL_PREFIX + item.poster)
             .placeholder(R.drawable.ic_baseline_movie_24)
-            .into(holder.posterImageView);
+            .into(holder.posterImageView)
         holder.releaseDateTextView.text = item.releaseDate
         holder.titleTextView.text = item.title
         holder.voteTextView.text = "${item.voteCount} Votes"
@@ -56,6 +55,7 @@ class MovieListAdapter(
         notifyDataSetChanged()
 
     }
+
     private var onItemClickListener: ((MovieModel) -> Unit)? = null
 
     fun setOnItemClickListener(listener: (MovieModel) -> Unit) {

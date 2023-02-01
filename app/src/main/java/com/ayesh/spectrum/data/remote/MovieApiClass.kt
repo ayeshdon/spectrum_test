@@ -1,6 +1,7 @@
 package com.ayesh.spectrum.data.remote
 
 import com.ayesh.spectrum.data.remote.dto.GenresDto
+import com.ayesh.spectrum.data.remote.dto.MovieDetailsDto
 import com.ayesh.spectrum.data.remote.dto.MovieListResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -22,4 +23,10 @@ interface MovieApiClass {
         @Query("api_key") apiKey: String = API_KEY,
         @Query("page") page: Int
     ): MovieListResponse
+
+    @GET(V_3 + "movie/{movie_id}")
+    suspend fun getMovieDetailsById(
+        @Path("movie_id") movieId: Int,
+        @Query("api_key") apiKey: String = API_KEY
+    ): MovieDetailsDto
 }
