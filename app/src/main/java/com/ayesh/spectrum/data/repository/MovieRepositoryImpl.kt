@@ -1,6 +1,5 @@
 package com.ayesh.spectrum.data.repository
 
-import android.util.Log
 import com.ayesh.spectrum.data.local.MovieDataBase
 import com.ayesh.spectrum.data.local.entity.MovieEntity
 import com.ayesh.spectrum.data.remote.MovieApiClass
@@ -36,6 +35,10 @@ class MovieRepositoryImpl @Inject constructor(
 
     override suspend fun getAllMovie(): List<MovieEntity> {
         return dataBase.movieDao().getAllMoviesFromLocal()
+    }
+
+    override suspend fun searchMovies(page: Int, query: String): MovieListResponse {
+        return apiClass.searchMovies(query = query, page = page)
     }
 
 

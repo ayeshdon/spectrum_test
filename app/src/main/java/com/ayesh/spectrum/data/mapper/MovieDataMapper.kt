@@ -34,7 +34,8 @@ fun MovieListResponse.Result.toMovieModel(): MovieModel {
     var pattern = "dd/MMM/yyyy"
     val parser = SimpleDateFormat("yyyy-MM-dd")
     val formatter = SimpleDateFormat(pattern)
-    val formatterReleaseDate: String = formatter.format(parser.parse(release_date))
+    val formatterReleaseDate: String =
+        if (release_date.isEmpty()) "" else formatter.format(parser.parse(release_date))
     return MovieModel(
         id = id,
         title = title,
