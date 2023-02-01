@@ -29,4 +29,11 @@ interface MovieApiClass {
         @Path("movie_id") movieId: Int,
         @Query("api_key") apiKey: String = API_KEY
     ): MovieDetailsDto
+
+    @GET(V_3 + "search/movie")
+    suspend fun searchMovies(
+        @Query("query") query: String,
+        @Query("api_key") apiKey: String = API_KEY,
+        @Query("page") page: Int
+    ): MovieListResponse
 }

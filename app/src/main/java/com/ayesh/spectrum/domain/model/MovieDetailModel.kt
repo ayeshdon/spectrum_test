@@ -10,7 +10,7 @@ data class MovieDetailModel(
     val releaseDate: String,
     val status: String,
     val poster: String,
-    val backDrop: String,
+    val backDrop: String?,
     val genreIds: String,
     val voteAvg: String,
     val languages: String,

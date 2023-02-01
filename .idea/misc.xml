@@ -19,6 +19,7 @@
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/activity_movie_details.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/activity_search_result.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/dialog_main.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/fragment_fav_movies_rated.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/fragment_now_playing.xml" value="0.240625" />

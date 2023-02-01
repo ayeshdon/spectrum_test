@@ -12,4 +12,5 @@ interface MovieRepository {
     suspend fun isMovieExit(id: Int): Int
     suspend fun deleteMovie(movieEntity: MovieEntity)
     suspend fun getAllMovie(): List<MovieEntity>
+    suspend fun searchMovies(page: Int, query: String): MovieListResponse
 }
